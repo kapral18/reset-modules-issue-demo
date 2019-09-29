@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Dummy from './Dummy'
 import logo from './logo.svg';
 import './App.css';
 
 const App: React.FC = () => {
+	const [ state ] = useState(0)
   return (
     <div className="App">
+			<Dummy />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
+					{state}
         </p>
         <a
           className="App-link"
