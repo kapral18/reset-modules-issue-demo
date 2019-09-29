@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 describe('aaa', () => {
-	// beforeEach(() => jest.resetModules())
-	// beforeEach(() => jest.resetModuleRegistry())
+	beforeEach(() => jest.resetModules())
+	beforeEach(() => jest.resetModuleRegistry())
 
 	it('renders without crashing', () => {
 		jest.doMock('./Dummy')
